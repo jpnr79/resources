@@ -73,7 +73,11 @@ class LDAP extends CommonDBTM
      *
      * @return bool
      **/
+<<<<<<< HEAD:src/LDAP.php
     public static function canView(): bool
+=======
+    static function canView():bool
+>>>>>>> 3bc15d7 (update to dev11):inc/ldap.class.php
     {
         return Session::haveRight(self::$rightname, READ);
     }
@@ -84,7 +88,11 @@ class LDAP extends CommonDBTM
      *
      * @return bool
      **/
+<<<<<<< HEAD:src/LDAP.php
     public static function canCreate(): bool
+=======
+    static function canCreate():bool
+>>>>>>> 3bc15d7 (update to dev11):inc/ldap.class.php
     {
         return Session::haveRightsOr(self::$rightname, [CREATE, UPDATE, DELETE]);
     }
