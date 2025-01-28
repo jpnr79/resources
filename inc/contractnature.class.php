@@ -56,7 +56,7 @@ class PluginResourcesContractNature extends CommonDropdown {
     *
     * @return booleen
     **/
-   static function canCreate() {
+   static function canCreate():bool {
       if (Session::haveRight('dropdown', UPDATE)
          && Session::haveRight('plugin_resources_dropdown_public', UPDATE)) {
          return true;
@@ -73,7 +73,7 @@ class PluginResourcesContractNature extends CommonDropdown {
     *
     * @return booleen
     **/
-   static function canView() {
+   static function canView():bool {
       if (Session::haveRight('dropdown_public', READ)) {
          return true;
       }

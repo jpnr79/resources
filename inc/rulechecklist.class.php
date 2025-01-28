@@ -64,7 +64,7 @@ class PluginResourcesRuleChecklist extends Rule {
     *
     * @return booleen
     **/
-   static function canView() {
+   static function canView():bool {
       return Session::haveRight(self::$rightname, READ);
    }
 
@@ -74,7 +74,7 @@ class PluginResourcesRuleChecklist extends Rule {
     *
     * @return booleen
     **/
-   static function canCreate() {
+   static function canCreate():bool {
       return Session::haveRightsOr(self::$rightname, [CREATE, UPDATE, DELETE]);
    }
 

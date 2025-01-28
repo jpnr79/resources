@@ -40,7 +40,7 @@ class PluginResourcesTaskPlanning extends CommonDBTM {
    /**
     * @return bool|\booleen
     */
-   static function canCreate() {
+   static function canCreate():bool {
       return (Session::haveRight(self::$rightname, UPDATE));
    }
 

@@ -50,14 +50,14 @@ class PluginResourcesTaskType extends CommonDropdown {
    /**
     * @return bool|\booleen
     */
-   static function canCreate() {
+   static function canCreate():bool {
       return Session::haveRight('dropdown', UPDATE);
    }
 
    /**
     * @return bool|\booleen
     */
-   static function canView() {
+   static function canView():bool {
       return Session::haveRight('plugin_resources_task', READ);
    }
 

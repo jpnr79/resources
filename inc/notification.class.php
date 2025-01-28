@@ -57,7 +57,7 @@ class PluginResourcesNotification extends CommonDBTM {
     *
     * @return booleen
     **/
-   static function canCreate() {
+   static function canCreate():bool {
       return Session::haveRight(self::$rightname, [CREATE, UPDATE, DELETE]);
    }
 
@@ -70,7 +70,7 @@ class PluginResourcesNotification extends CommonDBTM {
     *
     * @return booleen
     **/
-   static function canView() {
+   static function canView():bool {
       return Session::haveRight(self::$rightname, READ);
    }
 

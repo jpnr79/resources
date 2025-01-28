@@ -20,7 +20,7 @@ class PluginResourcesMenu extends CommonDBTM {
       return _n('Human resource', 'Human resources', $nb, 'resources');
    }
 
-    public static function canView()
+    public static function canView():bool
     {
         if (static::$rightname) {
             return Session::haveRight(static::$rightname, READ);

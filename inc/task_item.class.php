@@ -41,14 +41,14 @@ class PluginResourcesTask_Item extends CommonDBTM {
    /**
     * @return bool|\booleen
     */
-   static function canView() {
+   static function canView():bool {
       return Session::haveRight(self::$rightname, READ);
    }
 
    /**
     * @return bool|\booleen
     */
-   static function canCreate() {
+   static function canCreate():bool {
       return Session::haveRightsOr(self::$rightname, [CREATE, UPDATE, DELETE]);
    }
 

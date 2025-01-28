@@ -55,7 +55,7 @@ class PluginResourcesChoiceItem extends CommonTreeDropdown {
     *
     * @return booleen
     **/
-   static function canView() {
+   static function canView():bool {
       return Session::haveRight('plugin_resources', READ);
    }
 
@@ -65,7 +65,7 @@ class PluginResourcesChoiceItem extends CommonTreeDropdown {
     *
     * @return booleen
     **/
-   static function canCreate() {
+   static function canCreate():bool {
       return Session::haveRightsOr('dropdown', [CREATE, UPDATE, DELETE]);
    }
 

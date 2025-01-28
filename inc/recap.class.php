@@ -66,7 +66,7 @@ class PluginResourcesRecap extends CommonDBTM {
     *
     * @return booleen
     **/
-   static function canCreate() {
+   static function canCreate():bool {
       if (Session::haveRight('plugin_resources_employment', UPDATE)) {
          return true;
       }
@@ -82,7 +82,7 @@ class PluginResourcesRecap extends CommonDBTM {
     *
     * @return booleen
     **/
-   static function canView() {
+   static function canView():bool {
       if (Session::haveRight('plugin_resources_employment', READ)) {
          return true;
       }
