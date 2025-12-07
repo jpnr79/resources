@@ -69,8 +69,12 @@ function plugin_init_resources()
 {
     global $PLUGIN_HOOKS;
 
-    // add autoload for vendor
-    include_once(PLUGIN_RESOURCES_DIR . "/vendor/autoload.php");
+    // add autoload for vendor if present (some deployments don't run composer)
+    // Use __DIR__ to ensure we try the plugin directory absolute path
+    $resourcesAutoload = __DIR__ . '/vendor/autoload.php';
+    if (is_file($resourcesAutoload) && is_readable($resourcesAutoload)) {
+        include_once $resourcesAutoload;
+    }
 
     $PLUGIN_HOOKS['csrf_compliant']['resources'] = true;
     $PLUGIN_HOOKS['change_profile']['resources'] = [Profile::class, 'initProfile'];
