@@ -8,7 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2025-12-14 15:14+0000\n"
+=======
+"POT-Creation-Date: 2025-12-07 23:09+0000\n"
+>>>>>>> 0854ba1 (Update POT)
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1171,7 +1175,7 @@ msgid_plural "Holidays"
 msgstr[0] ""
 msgstr[1] ""
 
-#: setup.php:239 src/Metademand.php:80
+#: setup.php:243 src/Metademand.php:80
 msgid "Human Resource"
 msgid_plural "Human Resources"
 msgstr[0] ""
