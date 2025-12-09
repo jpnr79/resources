@@ -114,7 +114,6 @@ CREATE TABLE `glpi_plugin_resources_choices`
   DEFAULT CHARSET = utf8mb4
   COLLATE = utf8mb4_unicode_ci
   ROW_FORMAT = DYNAMIC;
-
 DROP TABLE IF EXISTS `glpi_plugin_resources_choiceitems`;
 CREATE TABLE `glpi_plugin_resources_choiceitems`
 (
@@ -175,9 +174,7 @@ CREATE TABLE `glpi_plugin_resources_employees`
 
 DROP TABLE IF EXISTS `glpi_plugin_resources_employers`;
 CREATE TABLE `glpi_plugin_resources_employers`
-(
-    `id`                            int unsigned NOT NULL auto_increment,
-    `entities_id`                   int unsigned NOT NULL                   default '0',
+...existing code...
     `is_recursive`                  tinyint      NOT NULL                   DEFAULT '0',
     `name`                          varchar(255) COLLATE utf8mb4_unicode_ci default NULL,
     `short_name`                    varchar(255) COLLATE utf8mb4_unicode_ci default NULL,
@@ -929,7 +926,7 @@ CREATE TABLE `glpi_plugin_resources_configs`
     `categories_id`                                int unsigned NOT NULL default '0',
     `mandatory_checklist`                          tinyint      NOT NULL default '0',
     `mandatory_adcreation`                         tinyint      NOT NULL default '0',
-    `plugin_resources_resourcetemplates_id`        int          NULL     DEFAULT '0',
+    `plugin_resources_resourcetemplates_id`        int unsigned NULL     DEFAULT '0',
     `plugin_resources_resourcestates_id_arrival`   int unsigned NULL     DEFAULT '0',
     `plugin_resources_resourcestates_id_departure` int unsigned NULL     DEFAULT '0',
     `reaffect_checklist_change`                    tinyint      NOT NULL DEFAULT '1',
@@ -948,7 +945,12 @@ CREATE TABLE `glpi_plugin_resources_configs`
   ROW_FORMAT = DYNAMIC;
 
 INSERT INTO `glpi_plugin_resources_configs`
+<<<<<<< HEAD
 VALUES (1, 0, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0);
+=======
+(`id`, `security_display`, `security_compliance`, `resource_manager`, `sales_manager`, `create_ticket_departure`, `categories_id`, `mandatory_checklist`, `mandatory_adcreation`, `plugin_resources_resourcetemplates_id`, `plugin_resources_resourcestates_id_arrival`, `plugin_resources_resourcestates_id_departure`, `reaffect_checklist_change`, `allow_without_contract`, `use_service_department_ad`, `use_secondary_service`, `use_meta_for_changes`, `use_meta_for_leave`, `remove_habilitation_on_update`, `display_habilitations_txt`, `hide_view_commercial_resource`)
+VALUES (1, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0);
+>>>>>>> ae42c8b (upgrade to glpi 11)
 
 DROP TABLE IF EXISTS `glpi_plugin_resources_imports`;
 CREATE TABLE `glpi_plugin_resources_imports`

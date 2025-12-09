@@ -112,25 +112,26 @@ CREATE TABLE `glpi_plugin_resources_leavinginformations`
   COLLATE = utf8mb4_unicode_ci
   ROW_FORMAT = DYNAMIC;
 
-ALTER TABLE `glpi_plugin_resources_contracttypes`
-    ADD `use_resignation_form` tinyint NOT NULL DEFAULT '0';
-ALTER TABLE `glpi_plugin_resources_contracttypes`
-    ADD `use_entrance_information` tinyint NOT NULL DEFAULT '0';
+-- These columns already exist in fresh installations, commenting out for upgrade compatibility
+-- ALTER TABLE `glpi_plugin_resources_contracttypes`
+--     ADD `use_resignation_form` tinyint NOT NULL DEFAULT '0';
+-- ALTER TABLE `glpi_plugin_resources_contracttypes`
+--     ADD `use_entrance_information` tinyint NOT NULL DEFAULT '0';
 
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `contract_type_change` tinyint NOT NULL DEFAULT '0';
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `contract_type_change` tinyint NOT NULL DEFAULT '0';
 
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `date_agreement_candidate` timestamp NULL DEFAULT NULL;
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `plugin_resources_degreegroups_id` int unsigned NOT NULL DEFAULT '0';
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `plugin_resources_recruitingsources_id` int unsigned NOT NULL DEFAULT '0';
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `yearsexperience` int unsigned NOT NULL DEFAULT '0';
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `reconversion` tinyint NOT NULL DEFAULT '0';
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `date_of_last_contract_type` timestamp NULL DEFAULT NULL;
-ALTER TABLE `glpi_plugin_resources_resources`
-    ADD `last_contract_type` int unsigned NOT NULL DEFAULT '0';
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `date_agreement_candidate` timestamp NULL DEFAULT NULL;
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `plugin_resources_degreegroups_id` int unsigned NOT NULL DEFAULT '0';
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `plugin_resources_recruitingsources_id` int unsigned NOT NULL DEFAULT '0';
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `yearsexperience` int unsigned NOT NULL DEFAULT '0';
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `reconversion` tinyint NOT NULL DEFAULT '0';
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `date_of_last_contract_type` timestamp NULL DEFAULT NULL;
+-- ALTER TABLE `glpi_plugin_resources_resources`
+--     ADD `last_contract_type` int unsigned NOT NULL DEFAULT '0';
