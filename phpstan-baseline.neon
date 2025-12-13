@@ -1,0 +1,4345 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/addneedcomment.php
+
+		-
+			message: '#^Call to static method getType\(\) on an unknown class Computer\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/checkComputerResource.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showTimeStamp\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/checklistactions.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\NotFoundHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/comments.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:makeTextSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 6
+			path: ajax/dropdownResources.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:decodeArrayFromInput\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/dropdownResources.php
+
+		-
+			message: '#^Call to an undefined static method Ajax\:\:commonDropdownUpdateItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/dropdownValue.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:makeTextSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: ajax/dropdownValue.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:decodeArrayFromInput\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: ajax/dropdownValue.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:strlen\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 6
+			path: ajax/dropdownValue.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:substr\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: ajax/dropdownValue.php
+
+		-
+			message: '#^Function htmlescape not found\.$#'
+			identifier: function.notFound
+			count: 5
+			path: ajax/dropdownValue.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\NotFoundHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/dropdownValue.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/inputtext.php
+
+		-
+			message: '#^Function htmlescape not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: ajax/inputtext.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/leavingform.php
+
+		-
+			message: '#^Call to static method getTable\(\) on an unknown class Profile_User\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/leavingform.php
+
+		-
+			message: '#^Instantiated class Profile_User not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/leavingform.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:checkCentralAccess\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/linkItems.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showTimeStamp\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/planning.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateTimeField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/planning.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:checkCentralAccess\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/planning.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateTimeField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: ajax/planningend.php
+
+		-
+			message: '#^Call to static method loadFormValues\(\) on an unknown class GlpiPlugin\\Metademands\\Form_Value\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/showHabilitations.php
+
+		-
+			message: '#^Instantiated class GlpiPlugin\\Metademands\\Form not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/showHabilitations.php
+
+		-
+			message: '#^Instantiated class GlpiPlugin\\Metademands\\Metademand not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/showHabilitations.php
+
+		-
+			message: '#^Instantiated class GlpiPlugin\\Metademands\\Wizard not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: ajax/showHabilitations.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/budget.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/checklistconfig.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showGenericSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/directory.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/directory.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/employment.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:checkCentralAccess\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/export.pdf.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:checkHelpdeskAccess\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/export.pdf.php
+
+		-
+			message: '#^Instantiated class PluginUseditemsexportExport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/export.pdf.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/import.form.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/import.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\BadRequestHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/importcolumn.form.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\BadRequestHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/importresource.form.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/importresource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/linkad.form.php
+
+		-
+			message: '#^Instantiated class ITILFollowup not found\.$#'
+			identifier: class.notFound
+			count: 3
+			path: front/linkad.form.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/menu.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/picture.send.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/front/rule\.cache\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: front/popup.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showGenericSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/recap.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/recap.php
+
+		-
+			message: '#^Class User referenced with incorrect case\: user\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: front/resource.form.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/resource.php
+
+		-
+			message: '#^Access to constant STATE_DISABLE on an unknown class CronTask\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/resource.remove.php
+
+		-
+			message: '#^Access to undefined constant Ticket\:\:DEMAND_TYPE\.$#'
+			identifier: classConstant.notFound
+			count: 2
+			path: front/resource.remove.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/resource.remove.php
+
+		-
+			message: '#^Instantiated class CronTask not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/resource.remove.php
+
+		-
+			message: '#^Instantiated class GlpiPlugin\\Badges\\Badge not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/resourcebadge.form.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/resourceholiday.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\BadRequestHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/resourceimport.form.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/resourceresting.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:checkCentralAccess\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/rule.test.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:checkCentralAccess\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/rulesengine.test.php
+
+		-
+			message: '#^Call to static method getClassByType\(\) on an unknown class RuleCollection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/rulesengine.test.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\AccessDeniedHttpException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/task.php
+
+		-
+			message: '#^Call to static method getFirstLineForTicket\(\) on an unknown class PluginEscaladeHistory\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/user.form.php
+
+		-
+			message: '#^Instantiated class Group_Ticket not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/user.form.php
+
+		-
+			message: '#^Instantiated class ITILSolution not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/user.form.php
+
+		-
+			message: '#^Instantiated class PluginFieldsField not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: front/user.form.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:return_bytes_from_ini_vars\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: front/wizard.form.php
+
+		-
+			message: '#^Access to constant STATE_DISABLE on an unknown class CronTask\.$#'
+			identifier: class.notFound
+			count: 4
+			path: hook.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 6
+			path: hook.php
+
+		-
+			message: '#^Array has 2 duplicate keys with value ''glpi_plugin_resources_ranks'' \("glpi_plugin_resources_ranks", "glpi_plugin_resources_ranks"\)\.$#'
+			identifier: array.duplicateKey
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method CommonGLPI\:\:registerStandardTab\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructSQL\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:displayData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:makeTextSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:prepareDatasForSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:deleteDir\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to function unset\(\) contains undefined variable \$input\.$#'
+			identifier: unset.variable
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Call to static method Register\(\) on an unknown class CronTask\.$#'
+			identifier: class.notFound
+			count: 7
+			path: hook.php
+
+		-
+			message: '#^Call to static method getLeftJoinCriteria\(\) on an unknown class Glpi\\Search\\Provider\\SQLProvider\.$#'
+			identifier: class.notFound
+			count: 15
+			path: hook.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class GlpiPlugin\\Badges\\Badge\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Class Computer not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: hook.php
+
+		-
+			message: '#^Class ConsumableItem not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Class GlpiPlugin\\Badges\\Badge not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Class Monitor not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Class NetworkEquipment not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Class Peripheral not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Class Phone not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Class Printer not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Function Safe\\mkdir not found\.$#'
+			identifier: function.notFound
+			count: 6
+			path: hook.php
+
+		-
+			message: '#^Instantiated class Config not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Instantiated class Notification_NotificationTemplate not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Used function Safe\\mkdir not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: hook.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 14
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 45
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class BudgetType\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Instantiated class PluginReportsDropdownCriteria not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/budgetsummary/budgetsummary.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 4
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Instantiated class PluginReportsArrayCriteria not found\.$#'
+			identifier: class.notFound
+			count: 3
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Instantiated class PluginReportsGroupCriteria not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/checkgroup/checkgroup.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 4
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/checkhabilitation/checkhabilitation.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 4
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/checkmissingN0group/checkmissingN0group.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 4
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/checkmissingN1group/checkmissingN1group.php
+
+		-
+			message: '#^Function getEntitiesRestrictRequest not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: report/lapserankprofession/lapserankprofession.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/lapserankprofession/lapserankprofession.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumn not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/lapserankprofession/lapserankprofession.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnDate not found\.$#'
+			identifier: class.notFound
+			count: 4
+			path: report/lapserankprofession/lapserankprofession.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnLink not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/lapserankprofession/lapserankprofession.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 16
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Instantiated class PluginReportsDropdownCriteria not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/professionwithoutcost/professionwithoutcost.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 16
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Instantiated class PluginReportsDropdownCriteria not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/professionwithoutvolume/professionwithoutvolume.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceemploymentdiff/resourceemploymentdiff.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumn not found\.$#'
+			identifier: class.notFound
+			count: 12
+			path: report/resourceemploymentdiff/resourceemploymentdiff.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnDate not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourceemploymentdiff/resourceemploymentdiff.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnFloat not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceemploymentdiff/resourceemploymentdiff.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnInteger not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceemploymentdiff/resourceemploymentdiff.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnLink not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourceemploymentdiff/resourceemploymentdiff.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 10
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Function getEntitiesRestrictRequest not found\.$#'
+			identifier: function.notFound
+			count: 3
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/resourceemploymentwithlapseprofession/resourceemploymentwithlapseprofession.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:HTML_OUTPUT\.$#'
+			identifier: classConstant.notFound
+			count: 5
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_LANDSCAPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Access to undefined constant Search\:\:PDF_OUTPUT_PORTRAIT\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showOutputFormat\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showEndLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showFooter\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeader\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showHeaderItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 10
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showNewLine\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Call to static method title\(\) on an unknown class Report\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Path in include\(\) "/var/www/glpi/vendor/tecnickcom/tcpdf/examples/tcpdf_include\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: report/resourceemploymentwithlapserank/resourceemploymentwithlapserank.php
+
+		-
+			message: '#^Class Employment not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceleavingwithactiveemployment/resourceleavingwithactiveemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceleavingwithactiveemployment/resourceleavingwithactiveemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumn not found\.$#'
+			identifier: class.notFound
+			count: 7
+			path: report/resourceleavingwithactiveemployment/resourceleavingwithactiveemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnDate not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourceleavingwithactiveemployment/resourceleavingwithactiveemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnInteger not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourceleavingwithactiveemployment/resourceleavingwithactiveemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnLink not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourceleavingwithactiveemployment/resourceleavingwithactiveemployment.php
+
+		-
+			message: '#^Class Resource not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourcewithoutemployment/resourcewithoutemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourcewithoutemployment/resourcewithoutemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumn not found\.$#'
+			identifier: class.notFound
+			count: 4
+			path: report/resourcewithoutemployment/resourcewithoutemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnDate not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourcewithoutemployment/resourcewithoutemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnInteger not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourcewithoutemployment/resourcewithoutemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnLink not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourcewithoutemployment/resourcewithoutemployment.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourcewithoutuser/resourcewithoutuser.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumn not found\.$#'
+			identifier: class.notFound
+			count: 4
+			path: report/resourcewithoutuser/resourcewithoutuser.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnDate not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: report/resourcewithoutuser/resourcewithoutuser.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnLink not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/resourcewithoutuser/resourcewithoutuser.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/userwithmorethanoneresource/userwithmorethanoneresource.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnLink not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/userwithmorethanoneresource/userwithmorethanoneresource.php
+
+		-
+			message: '#^Instantiated class PluginReportsAutoReport not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/userwithnoresource/userwithnoresource.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumn not found\.$#'
+			identifier: class.notFound
+			count: 3
+			path: report/userwithnoresource/userwithnoresource.php
+
+		-
+			message: '#^Instantiated class PluginReportsColumnLink not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: report/userwithnoresource/userwithnoresource.php
+
+		-
+			message: '#^Class GlpiPlugin\\Behaviors\\Rule not found\.$#'
+			identifier: class.notFound
+			count: 3
+			path: setup.php
+
+		-
+			message: '#^Call to static method getType\(\) on an unknown class AuthLDAP\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Adconfig.php
+
+		-
+			message: '#^Instantiated class GLPIKey not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Adconfig.php
+
+		-
+			message: '#^Instantiated class ITILCategory not found\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/Adconfig.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Adconfig\:\:showConfigForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Adconfig.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Budget.php
+
+		-
+			message: '#^Access to constant HISTORY_LOG_SIMPLE_MESSAGE on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Access to undefined constant Alert\:\:END\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Access to undefined constant Alert\:\:NOTICE\.$#'
+			identifier: classConstant.notFound
+			count: 2
+			path: src/Checklist.php
+
+		-
+			message: '#^Access to undefined constant Ticket\:\:CLOSED\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Access to undefined constant Ticket\:\:READALL\.$#'
+			identifier: classConstant.notFound
+			count: 2
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showTimeStamp\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:computeGenericDateTimeSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to an undefined static method Plugin\:\:loadLang\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:isMultiEntitiesMode\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to static method history\(\) on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Instantiated class RuleTicketCollection not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Instantiated class TicketTemplate not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Instantiated class TicketTemplatePredefinedField not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Checklist\:\:checkifChecklistExist\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Checklist\:\:openFinishedChecklist\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Checklist\:\:showFromResources\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Checklist\:\:displayTabContentForPDF\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Checklist\:\:pdfForResource\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Static call to instance method CommonDBTM\:\:showMassiveActionsSubForm\(\)\.$#'
+			identifier: method.staticCall
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Undefined variable\: \$input$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/Checklist.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Checklistconfig.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:isMultiEntitiesMode\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Checklistconfig.php
+
+		-
+			message: '#^Static call to instance method CommonDBTM\:\:showMassiveActionsSubForm\(\)\.$#'
+			identifier: method.staticCall
+			count: 1
+			path: src/Checklistconfig.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ClientInjection.php
+
+		-
+			message: '#^Call to static method addToSearchOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ClientInjection.php
+
+		-
+			message: '#^Instantiated class PluginDatainjectionCommonInjectionLib not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ClientInjection.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class ITILCategory\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Config.php
+
+		-
+			message: '#^Instantiated class GlpiPlugin\\Metademands\\Metademand not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Config.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Config\:\:showMetademandsForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Config.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Config\:\:showOtherForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Config.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Config\:\:showWorkflowForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Config.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class GlpiPlugin\\Metademands\\Metademand\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ConfigHabilitation.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class GlpiPlugin\\Metademands\\Metademand_Resource\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/ConfigHabilitation.php
+
+		-
+			message: '#^Class GlpiPlugin\\Metademands\\Metademand not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ConfigHabilitation.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ConfigHabilitation\:\:showFormHabilitation\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/ConfigHabilitation.php
+
+		-
+			message: '#^Class GlpiPlugin\\Resources\\ContractNature referenced with incorrect case\: GlpiPlugin\\Resources\\Contractnature\.$#'
+			identifier: class.nameCase
+			count: 1
+			path: src/ContractNature.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ContractType\:\:getContractTypeName\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/ContractType.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Cost.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Cost.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Cost.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\Dashboard\:\:\$interfaces\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Dashboard.php
+
+		-
+			message: '#^Access to static property \$TABLE on an unknown class GlpiPlugin\\Mydashboard\\Widget\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Dashboard.php
+
+		-
+			message: '#^Access to static property \$USERS on an unknown class GlpiPlugin\\Mydashboard\\Menu\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Dashboard.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\Dashboard\:\:getType\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: src/Dashboard.php
+
+		-
+			message: '#^Instantiated class GlpiPlugin\\Mydashboard\\Datatable not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Dashboard.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Dashboard\:\:getWidgetContentForItem\(\) should return GlpiPlugin\\Mydashboard\\Datatable but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Dashboard.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\DateCriteria\:\:addCriteriaLabel\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\DateCriteria\:\:addParameter\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\DateCriteria\:\:getCriteriaLabel\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\DateCriteria\:\:getName\(\)\.$#'
+			identifier: method.notFound
+			count: 8
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\DateCriteria\:\:getParameter\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\DateCriteria\:\:getReport\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/DateCriteria.php
+
+		-
+			message: '#^GlpiPlugin\\Resources\\DateCriteria\:\:__construct\(\) calls parent\:\:__construct\(\) but GlpiPlugin\\Resources\\DateCriteria does not extend any class\.$#'
+			identifier: class.noParent
+			count: 1
+			path: src/DateCriteria.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addDefaultJoin\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addDefaultSelect\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addDefaultWhere\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addHaving\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addMetaLeftJoin\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addOrderBy\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addSelect\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addWhere\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:computeComplexJoinID\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructSQL\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:displayData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:prepareDatasForSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showError\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:haveTranslations\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Function isPluginItemType not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Directory\:\:addLeftJoin\(\) should return GlpiPlugin\\Resources\\Left but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Directory.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Employee\:\:showEmployeeForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Employee.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Employee\:\:showFormHelpdesk\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Employee.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Employee\:\:displayTabContentForPDF\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Employee.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Employee\:\:pdfForResource\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Employee.php
+
+		-
+			message: '#^Access to undefined constant Alert\:\:END\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Plugin\:\:loadLang\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructSQL\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:displayData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:prepareDatasForSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Employment\:\:cleanDBonPurge\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Employment.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\EmploymentState\:\:\$updates\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/EmploymentState.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/HabilitationInjection.php
+
+		-
+			message: '#^Call to static method addToSearchOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/HabilitationInjection.php
+
+		-
+			message: '#^Instantiated class PluginDatainjectionCommonInjectionLib not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/HabilitationInjection.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Import.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\ImportResource\:\:\$existingImports\.$#'
+			identifier: property.notFound
+			count: 3
+			path: src/ImportResource.php
+
+		-
+			message: '#^Access to constant STATE_DISABLE on an unknown class CronTask\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ImportResource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:file\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ImportResource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/ImportResource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ImportResource.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:logDebug\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ImportResource.php
+
+		-
+			message: '#^Call to static method getTable\(\) on an unknown class Profile_User\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/ImportResource.php
+
+		-
+			message: '#^Inner named functions are not supported by PHPStan\. Consider refactoring to an anonymous function, class method, or a top\-level\-defined function\. See issue \#165 \(https\://github\.com/phpstan/phpstan/issues/165\) for more details\.$#'
+			identifier: function.inner
+			count: 1
+			path: src/ImportResource.php
+
+		-
+			message: '#^Instantiated class CronTask not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ImportResource.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\BadRequestHttpException not found\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/ImportResource.php
+
+		-
+			message: '#^Instantiated class Profile_User not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/ImportResource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ImportResource\:\:getStatusTitle\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/ImportResource.php
+
+		-
+			message: '#^Instantiated class AuthLDAP not found\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/LDAP.php
+
+		-
+			message: '#^Instantiated class GLPIKey not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/LDAP.php
+
+		-
+			message: '#^Call to static method getTable\(\) on an unknown class Profile_User\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/LeavingInformation.php
+
+		-
+			message: '#^Instantiated class Profile_User not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/LeavingInformation.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\LeavingInformation\:\:showLeavingInformationForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/LeavingInformation.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/LinkAd.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class Phone\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/LinkAd.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\LinkAd\:\:deleteButtton\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/LinkAd.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\LinkAd\:\:messageSolution\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/LinkAd.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\LinkAd\:\:showFromResources\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/LinkAd.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\LinkAd\:\:showMessage\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/LinkAd.php
+
+		-
+			message: '#^Undefined variable\: \$input$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/LinkAd.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\Menu\:\:addStandardTab\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Menu.php
+
+		-
+			message: '#^Call to an undefined static method GlpiPlugin\\Resources\\Menu\:\:createTabEntry\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: src/Menu.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:append_params\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Menu.php
+
+		-
+			message: '#^Call to static method _serialize\(\) on an unknown class GlpiPlugin\\Metademands\\FieldParameter\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/Metademand.php
+
+		-
+			message: '#^Call to static method _unserialize\(\) on an unknown class GlpiPlugin\\Metademands\\Field\.$#'
+			identifier: class.notFound
+			count: 7
+			path: src/Metademand.php
+
+		-
+			message: '#^Call to static method getInstance\(\) on an unknown class GlpiPlugin\\Metademands\\Config\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Metademand.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Metademand\:\:afterCreateTicket\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Metademand.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Metademand\:\:saveOptions\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Metademand.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printAjaxPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Notification.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:cleanInteger\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Notification.php
+
+		-
+			message: '#^Access to an undefined property \$this\(GlpiPlugin\\Resources\\NotificationTargetResource\)\:\:\$obj\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\NotificationTargetResource\:\:\$data\.$#'
+			identifier: property.notFound
+			count: 6
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\NotificationTargetResource\:\:\$notification_targets\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\NotificationTargetResource\:\:\$notification_targets_labels\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\NotificationTargetResource\:\:\$obj\.$#'
+			identifier: property.notFound
+			count: 61
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\NotificationTargetResource\:\:\$tag_descriptions\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\NotificationTargetResource\:\:\$target_object\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\NotificationTargetResource\:\:addTagToList\(\)\.$#'
+			identifier: method.notFound
+			count: 5
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\NotificationTargetResource\:\:addTarget\(\)\.$#'
+			identifier: method.notFound
+			count: 12
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\NotificationTargetResource\:\:addToRecipientsList\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\NotificationTargetResource\:\:addUserByField\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\NotificationTargetResource\:\:getAllEvents\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\NotificationTargetResource\:\:getDistinctUserCriteria\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 26
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to static method getTextFromHtml\(\) on an unknown class Glpi\\RichText\\RichText\.$#'
+			identifier: class.notFound
+			count: 14
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Class GlpiPlugin\\Resources\\Ressource not found\.$#'
+			identifier: class.notFound
+			count: 4
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Instantiated class Notification_NotificationTemplate not found\.$#'
+			identifier: class.notFound
+			count: 11
+			path: src/NotificationTargetResource.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\Profile\:\:showLegend\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Profile.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addDefaultJoin\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addDefaultWhere\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addHaving\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addMetaLeftJoin\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addOrderBy\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addSelect\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:addWhere\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:computeComplexJoinID\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructSQL\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:displayData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:prepareDatasForSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:showError\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:haveTranslations\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Function isPluginItemType not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Recap\:\:addLeftJoin\(\) should return GlpiPlugin\\Resources\\Left but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Recap.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: src/ReportConfig.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ReportConfig\:\:checkIfReportsExist\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/ReportConfig.php
+
+		-
+			message: '#^Access to an undefined property \$this\(GlpiPlugin\\Resources\\Resource\)\:\:\$updates\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\Resource\:\:\$updates\.$#'
+			identifier: property.notFound
+			count: 6
+			path: src/Resource.php
+
+		-
+			message: '#^Access to undefined constant Alert\:\:END\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Access to undefined constant GlpiPlugin\\Resources\\User\:\:FIRSTNAME_BEFORE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Ajax\:\:commonDropdownUpdateItem\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Plugin\:\:loadLang\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:makeTextSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 5
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:isMultiEntitiesMode\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: src/Resource.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:return_bytes_from_ini_vars\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class UserCategory\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class UserTitle\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Call to static method getTable\(\) on an unknown class Profile_User\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Call to static method now\(\) on an unknown class Glpi\\DBAL\\QueryFunction\.$#'
+			identifier: class.notFound
+			count: 4
+			path: src/Resource.php
+
+		-
+			message: '#^Class Computer not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class ComputerType not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class ConsumableItem not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class Item_Problem not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class Log not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class Monitor not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class NetworkEquipment not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class Peripheral not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class Phone not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class PhoneType not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Class Printer not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Function countDistinctElementsInTable not found\.$#'
+			identifier: function.notFound
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\BadRequestHttpException not found\.$#'
+			identifier: class.notFound
+			count: 6
+			path: src/Resource.php
+
+		-
+			message: '#^Instantiated class Profile_User not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Instantiated class UserCategory not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource\:\:cleanDBonPurge\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource\:\:post_addItem\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource\:\:post_updateItem\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource\:\:pre_updateInDB\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource\:\:reSendResourceCreation\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource\:\:sendFile\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource\:\:sendReport\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Resource.php
+
+		-
+			message: '#^Static call to instance method CommonDBTM\:\:showMassiveActionsSubForm\(\)\.$#'
+			identifier: method.staticCall
+			count: 1
+			path: src/Resource.php
+
+		-
+			message: '#^Access to constant HISTORY_LOG_SIMPLE_MESSAGE on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Access to undefined constant Ticket\:\:DEMAND_TYPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:computeGenericDateTimeSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class GlpiPlugin\\Badges\\Badge\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class GlpiPlugin\\Badges\\Badge\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class GlpiPlugin\\Metademands\\Metademand\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class GlpiPlugin\\Metademands\\Metademand_Resource\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Call to static method history\(\) on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Class GlpiPlugin\\Badges\\Badge not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Class GlpiPlugin\\Metademands\\Metademand not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Instantiated class ITILCategory not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Instantiated class TicketTemplate not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Instantiated class TicketTemplatePredefinedField not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ResourceBadge\:\:showFormBadge\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/ResourceBadge.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/ResourceCard.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:isMultiEntitiesMode\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ResourceCard.php
+
+		-
+			message: '#^Class GlpiPlugin\\Badges\\Badge not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceCard.php
+
+		-
+			message: '#^Access to constant HISTORY_LOG_SIMPLE_MESSAGE on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/ResourceHabilitation.php
+
+		-
+			message: '#^Call to static method history\(\) on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/ResourceHabilitation.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ResourceHabilitation\:\:showItem\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/ResourceHabilitation.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\ResourceHabilitation\:\:displayTabContentForPDF\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceHabilitation.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\ResourceHabilitation\:\:pdfForResource\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceHabilitation.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\ResourceHoliday\:\:\$oldvalues\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/ResourceHoliday.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\ResourceHoliday\:\:\$updates\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/ResourceHoliday.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/ResourceHoliday.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ResourceHoliday.php
+
+		-
+			message: '#^Instantiated class Glpi\\Exception\\Http\\BadRequestHttpException not found\.$#'
+			identifier: class.notFound
+			count: 10
+			path: src/ResourceImport.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:getOptions\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ResourceInjection.php
+
+		-
+			message: '#^Call to static method addToSearchOptions\(\) on an unknown class PluginDatainjectionCommonInjectionLib\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceInjection.php
+
+		-
+			message: '#^Instantiated class PluginDatainjectionCommonInjectionLib not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourceInjection.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\ResourcePDF\:\:\$obj\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/ResourcePDF.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/ResourcePDF.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$obj \(CommonGLPI\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: src/ResourcePDF.php
+
+		-
+			message: '#^GlpiPlugin\\Resources\\ResourcePDF\:\:defineAllTabsPDF\(\) calls parent\:\:defineAllTabsPDF\(\) but GlpiPlugin\\Resources\\ResourcePDF does not extend any class\.$#'
+			identifier: class.noParent
+			count: 1
+			path: src/ResourcePDF.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ResourcePDF\:\:pdfMain\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/ResourcePDF.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\ResourcePDF\:\:displayTabContentForPDF\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourcePDF.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\ResourcePDF\:\:pdfMain\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/ResourcePDF.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\ResourceResting\:\:\$oldvalues\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/ResourceResting.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\ResourceResting\:\:\$updates\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/ResourceResting.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ResourceResting.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/ResourceResting.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/ResourceResting.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\ResourceResting\:\:post_updateItem\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/ResourceResting.php
+
+		-
+			message: '#^Access to constant HISTORY_LOG_SIMPLE_MESSAGE on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Access to undefined constant Ticket\:\:DEMAND_TYPE\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Call to an undefined static method Ajax\:\:updateItemOnInputTextEvent\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:computeGenericDateTimeSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 3
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Call to static method history\(\) on an unknown class Log\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Instantiated class ITILCategory not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Instantiated class TicketTemplate not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Instantiated class TicketTemplatePredefinedField not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource_Change\:\:showFormActions\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Resource_Change.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 7
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:isMultiEntitiesMode\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 10
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Class GlpiPlugin\\Badges\\Badge not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource_Item\:\:addItem\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource_Item\:\:searchAssociatedBadge\(\) should return int but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Resource_Item\:\:showForResource\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Resource_Item\:\:displayTabContentForPDF\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Resource_Item\:\:pdfForResource\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Resource_Item.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\RuleChecklist\:\:getCriteria\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/RuleChecklist.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\RuleChecklistCollection\:\:\$RuleList\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/RuleChecklistCollection.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\RuleChecklistCollection\:\:\$entity\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/RuleChecklistCollection.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\RuleChecklistCollection\:\:\$use_output_rule_process_as_next_input\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/RuleChecklistCollection.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\RuleChecklistCollection\:\:getCollectionDatas\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/RuleChecklistCollection.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\RuleChecklistCollection\:\:prepareInputDataForProcess\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/RuleChecklistCollection.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\RuleChecklistCollection\:\:showTestResults\(\) should return GlpiPlugin\\Resources\\cleaned but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/RuleChecklistCollection.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\RuleContracttype\:\:\$criterias\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/RuleContracttype.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\RuleContracttype\:\:getCriteria\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/RuleContracttype.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\RuleContracttypeCollection\:\:\$entity\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/RuleContracttypeCollection.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\RuleContracttypeHidden\:\:\$criterias\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/RuleContracttypeHidden.php
+
+		-
+			message: '#^Call to an undefined method GlpiPlugin\\Resources\\RuleContracttypeHidden\:\:getCriteria\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: src/RuleContracttypeHidden.php
+
+		-
+			message: '#^Call to static method hidden\(\) on an unknown class GlpiPlugin\\Resources\\Html\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/RuleContracttypeHidden.php
+
+		-
+			message: '#^Access to an undefined property GlpiPlugin\\Resources\\RuleContracttypeHiddenCollection\:\:\$entity\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/RuleContracttypeHiddenCollection.php
+
+		-
+			message: '#^Access to undefined constant Alert\:\:END\.$#'
+			identifier: classConstant.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Dropdown\:\:showTimeStamp\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:convDate\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Plugin\:\:loadLang\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:constructSQL\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:displayData\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Search\:\:prepareDatasForSearch\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:isMultiEntitiesMode\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 4
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:getTimestampTimeUnits\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to an undefined static method Toolbox\:\:manageBeginAndEndPlanDates\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Task.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Task\:\:displayTabContentForPDF\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\Task\:\:pdfForResource\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Static call to instance method CommonDBTM\:\:showMassiveActionsSubForm\(\)\.$#'
+			identifier: method.staticCall
+			count: 1
+			path: src/Task.php
+
+		-
+			message: '#^Call to static method checkAlreadyPlanned\(\) on an unknown class Planning\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/TaskPlanning.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\TaskPlanning\:\:displayError\(\) should return GlpiPlugin\\Resources\\nothing but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/TaskPlanning.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\TransferEntity\:\:showConfigForm\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 2
+			path: src/TransferEntity.php
+
+		-
+			message: '#^Call to static method getLabelFor\(\) on an unknown class PluginFieldsLabelTranslation\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/User.php
+
+		-
+			message: '#^Call to static method getMethodName\(\) on an unknown class Auth\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/User.php
+
+		-
+			message: '#^Call to static method getTypeName\(\) on an unknown class Phone\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/User.php
+
+		-
+			message: '#^Instantiated class PluginFieldsContainer not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/User.php
+
+		-
+			message: '#^Instantiated class PluginFieldsField not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/User.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\User\:\:displayTabContentForPDF\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/User.php
+
+		-
+			message: '#^Parameter \$pdf of method GlpiPlugin\\Resources\\User\:\:pdfForResource\(\) has invalid type PluginPdfSimplePDF\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/User.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:formatNumber\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Wizard.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:showDateField\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Wizard.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:textarea\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: src/Wizard.php
+
+		-
+			message: '#^Call to an undefined static method Session\:\:isMultiEntitiesMode\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Wizard.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class UserCategory\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Wizard.php
+
+		-
+			message: '#^Call to static method dropdown\(\) on an unknown class UserTitle\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Wizard.php
+
+		-
+			message: '#^Call to static method getTable\(\) on an unknown class Profile_User\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Wizard.php
+
+		-
+			message: '#^Instantiated class Profile_User not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/Wizard.php
+
+		-
+			message: '#^Instantiated class UserCategory not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Wizard.php
+
+		-
+			message: '#^Method GlpiPlugin\\Resources\\Wizard\:\:wizardFirstStep\(\) should return bool but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/Wizard.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#3 \$connection \(Adldap\\Connections\\ConnectionInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Adldap.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#3 \$connection \(Adldap\\Connections\\ConnectionInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/AdldapInterface.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$error \(Adldap\\Connections\\DetailedError\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Auth/BindException.php
+
+		-
+			message: '#^Function ldap_control_paged_result not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: vendor/adldap2/adldap2/src/Connections/Ldap.php
+
+		-
+			message: '#^Function ldap_control_paged_result_response not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: vendor/adldap2/adldap2/src/Connections/Ldap.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$connection \(Adldap\\Connections\\ConnectionInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Connections/Provider.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$schema \(Adldap\\Schemas\\SchemaInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Connections/Provider.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$connection \(Adldap\\Connections\\ConnectionInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Connections/Provider.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$connection \(Adldap\\Connections\\ConnectionInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Connections/ProviderInterface.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$schema \(Adldap\\Schemas\\SchemaInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Connections/ProviderInterface.php
+
+		-
+			message: '#^Call to static method wrap\(\) on an unknown class Illuminate\\Support\\Arr\.$#'
+			identifier: class.notFound
+			count: 2
+			path: vendor/adldap2/adldap2/src/Events/Dispatcher.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$logger \(Psr\\Log\\LoggerInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Log/EventLogger.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$schema \(Adldap\\Schemas\\SchemaInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Models/Factory.php
+
+		-
+			message: '#^Call to static method except\(\) on an unknown class Illuminate\\Support\\Arr\.$#'
+			identifier: class.notFound
+			count: 2
+			path: vendor/adldap2/adldap2/src/Models/Model.php
+
+		-
+			message: '#^Call to static method first\(\) on an unknown class Illuminate\\Support\\Arr\.$#'
+			identifier: class.notFound
+			count: 2
+			path: vendor/adldap2/adldap2/src/Models/Model.php
+
+		-
+			message: '#^Call to static method get\(\) on an unknown class Illuminate\\Support\\Arr\.$#'
+			identifier: class.notFound
+			count: 2
+			path: vendor/adldap2/adldap2/src/Models/Model.php
+
+		-
+			message: '#^Call to static method has\(\) on an unknown class Illuminate\\Support\\Arr\.$#'
+			identifier: class.notFound
+			count: 2
+			path: vendor/adldap2/adldap2/src/Models/Model.php
+
+		-
+			message: '#^Class Adldap\\Query\\Collection does not have a constructor and must be instantiated without any parameters\.$#'
+			identifier: new.noConstructor
+			count: 1
+			path: vendor/adldap2/adldap2/src/Models/Model.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$date \(DateTime\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Models/User.php
+
+		-
+			message: '#^Method Adldap\\Models\\User\:\:getAuthPassword\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: vendor/adldap2/adldap2/src/Models/User.php
+
+		-
+			message: '#^Method Adldap\\Models\\User\:\:getRememberToken\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: vendor/adldap2/adldap2/src/Models/User.php
+
+		-
+			message: '#^Method Adldap\\Models\\User\:\:getRememberTokenName\(\) should return string but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: vendor/adldap2/adldap2/src/Models/User.php
+
+		-
+			message: '#^Call to static method get\(\) on an unknown class Illuminate\\Support\\Arr\.$#'
+			identifier: class.notFound
+			count: 2
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$cache \(Adldap\\Query\\Cache\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$closure \(Closure\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$grammar \(Adldap\\Query\\Grammar\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$schema \(Adldap\\Schemas\\SchemaInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$until \(DateTimeInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$grammar \(Adldap\\Query\\Grammar\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#3 \$schema \(Adldap\\Schemas\\SchemaInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Builder.php
+
+		-
+			message: '#^Call to an undefined method Adldap\\Query\\Collection\:\:useAsCallable\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Collection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$schema \(Adldap\\Schemas\\SchemaInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Factory.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$schema \(Adldap\\Schemas\\SchemaInterface\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Factory.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Operator.php
+
+		-
+			message: '#^Class Adldap\\Query\\Collection does not have a constructor and must be instantiated without any parameters\.$#'
+			identifier: new.noConstructor
+			count: 1
+			path: vendor/adldap2/adldap2/src/Query/Processor.php
+
+		-
+			message: '#^Parameter \$parser of method Composer\\InstalledVersions\:\:satisfies\(\) has invalid type Composer\\Semver\\VersionParser\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/composer/InstalledVersions.php
+
+		-
+			message: '#^Parameter \$model of method Illuminate\\Contracts\\Database\\Eloquent\\CastsAttributes\:\:get\(\) has invalid type Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/illuminate/contracts/Database/Eloquent/CastsAttributes.php
+
+		-
+			message: '#^Parameter \$model of method Illuminate\\Contracts\\Database\\Eloquent\\CastsAttributes\:\:set\(\) has invalid type Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/illuminate/contracts/Database/Eloquent/CastsAttributes.php
+
+		-
+			message: '#^Parameter \$model of method Illuminate\\Contracts\\Database\\Eloquent\\CastsInboundAttributes\:\:set\(\) has invalid type Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/illuminate/contracts/Database/Eloquent/CastsInboundAttributes.php
+
+		-
+			message: '#^Parameter \$model of method Illuminate\\Contracts\\Database\\Eloquent\\SerializesCastableAttributes\:\:serialize\(\) has invalid type Illuminate\\Database\\Eloquent\\Model\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/illuminate/contracts/Database/Eloquent/SerializesCastableAttributes.php
+
+		-
+			message: '#^Parameter \$grammar of method Illuminate\\Contracts\\Database\\Query\\Expression\:\:getValue\(\) has invalid type Illuminate\\Database\\Grammar\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/illuminate/contracts/Database/Query/Expression.php
+
+		-
+			message: '#^Parameter \$validator of method Illuminate\\Contracts\\Validation\\ValidatorAwareRule\:\:setValidator\(\) has invalid type Illuminate\\Validation\\Validator\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/illuminate/contracts/Validation/ValidatorAwareRule.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 3
+			path: vendor/symfony/var-dumper/Caster/ClassStub.php
+
+		-
+			message: '#^Parameter \$coll of method Symfony\\Component\\VarDumper\\Caster\\DoctrineCaster\:\:castPersistentCollection\(\) has invalid type Doctrine\\ORM\\PersistentCollection\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/DoctrineCaster.php
+
+		-
+			message: '#^Parameter \$proxy of method Symfony\\Component\\VarDumper\\Caster\\DoctrineCaster\:\:castCommonProxy\(\) has invalid type Doctrine\\Common\\Proxy\\Proxy\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/DoctrineCaster.php
+
+		-
+			message: '#^Parameter \$proxy of method Symfony\\Component\\VarDumper\\Caster\\DoctrineCaster\:\:castOrmProxy\(\) has invalid type Doctrine\\ORM\\Proxy\\Proxy\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/DoctrineCaster.php
+
+		-
+			message: '#^Class Symfony\\Component\\ErrorHandler\\Exception\\FlattenException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/ExceptionCaster.php
+
+		-
+			message: '#^Class Symfony\\Component\\ErrorHandler\\Exception\\SilencedErrorContext not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/ExceptionCaster.php
+
+		-
+			message: '#^Parameter \$e of method Symfony\\Component\\VarDumper\\Caster\\ExceptionCaster\:\:castFlattenException\(\) has invalid type Symfony\\Component\\ErrorHandler\\Exception\\FlattenException\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/ExceptionCaster.php
+
+		-
+			message: '#^Parameter \$e of method Symfony\\Component\\VarDumper\\Caster\\ExceptionCaster\:\:castSilencedErrorContext\(\) has invalid type Symfony\\Component\\ErrorHandler\\Exception\\SilencedErrorContext\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/ExceptionCaster.php
+
+		-
+			message: '#^Parameter \$c of method Symfony\\Component\\VarDumper\\Caster\\ImagineCaster\:\:castImage\(\) has invalid type Imagine\\Image\\ImageInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/ImagineCaster.php
+
+		-
+			message: '#^Parameter \$c of method Symfony\\Component\\VarDumper\\Caster\\ProxyManagerCaster\:\:castProxy\(\) has invalid type ProxyManager\\Proxy\\ProxyInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/ProxyManagerCaster.php
+
+		-
+			message: '#^Access to constant STATUS_INITIALIZED_FULL on an unknown class Symfony\\Component\\VarExporter\\Internal\\LazyObjectState\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/SymfonyCaster.php
+
+		-
+			message: '#^Access to constant STATUS_INITIALIZED_PARTIAL on an unknown class Symfony\\Component\\VarExporter\\Internal\\LazyObjectState\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/SymfonyCaster.php
+
+		-
+			message: '#^Access to constant STATUS_UNINITIALIZED_FULL on an unknown class Symfony\\Component\\VarExporter\\Internal\\LazyObjectState\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/SymfonyCaster.php
+
+		-
+			message: '#^Access to constant STATUS_UNINITIALIZED_PARTIAL on an unknown class Symfony\\Component\\VarExporter\\Internal\\LazyObjectState\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/SymfonyCaster.php
+
+		-
+			message: '#^Parameter \$request of method Symfony\\Component\\VarDumper\\Caster\\SymfonyCaster\:\:castRequest\(\) has invalid type Symfony\\Component\\HttpFoundation\\Request\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/SymfonyCaster.php
+
+		-
+			message: '#^Parameter \$ulid of method Symfony\\Component\\VarDumper\\Caster\\SymfonyCaster\:\:castUlid\(\) has invalid type Symfony\\Component\\Uid\\Ulid\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/SymfonyCaster.php
+
+		-
+			message: '#^Parameter \$uuid of method Symfony\\Component\\VarDumper\\Caster\\SymfonyCaster\:\:castUuid\(\) has invalid type Symfony\\Component\\Uid\\Uuid\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/SymfonyCaster.php
+
+		-
+			message: '#^Parameter \$c of method Symfony\\Component\\VarDumper\\Caster\\UuidCaster\:\:castRamseyUuid\(\) has invalid type Ramsey\\Uuid\\UuidInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Caster/UuidCaster.php
+
+		-
+			message: '#^Class Symfony\\Component\\Console\\Style\\SymfonyStyle not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php
+
+		-
+			message: '#^Instantiated class Symfony\\Component\\Console\\Input\\ArrayInput not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php
+
+		-
+			message: '#^Instantiated class Symfony\\Component\\Console\\Style\\SymfonyStyle not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php
+
+		-
+			message: '#^Parameter \$output of method Symfony\\Component\\VarDumper\\Command\\Descriptor\\CliDescriptor\:\:describe\(\) has invalid type Symfony\\Component\\Console\\Output\\OutputInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php
+
+		-
+			message: '#^Parameter \$output of method Symfony\\Component\\VarDumper\\Command\\Descriptor\\DumpDescriptorInterface\:\:describe\(\) has invalid type Symfony\\Component\\Console\\Output\\OutputInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/Descriptor/DumpDescriptorInterface.php
+
+		-
+			message: '#^Parameter \$output of method Symfony\\Component\\VarDumper\\Command\\Descriptor\\HtmlDescriptor\:\:describe\(\) has invalid type Symfony\\Component\\Console\\Output\\OutputInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php
+
+		-
+			message: '#^Access to constant VALUE_REQUIRED on an unknown class Symfony\\Component\\Console\\Input\\InputOption\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Attribute class Symfony\\Component\\Console\\Attribute\\AsCommand does not exist\.$#'
+			identifier: attribute.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Call to an undefined method Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand\:\:addOption\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Instantiated class Symfony\\Component\\Console\\Exception\\InvalidArgumentException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Instantiated class Symfony\\Component\\Console\\Style\\SymfonyStyle not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Parameter \$input of method Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand\:\:complete\(\) has invalid type Symfony\\Component\\Console\\Completion\\CompletionInput\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Parameter \$input of method Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand\:\:execute\(\) has invalid type Symfony\\Component\\Console\\Input\\InputInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Parameter \$output of method Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand\:\:execute\(\) has invalid type Symfony\\Component\\Console\\Output\\OutputInterface\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Parameter \$suggestions of method Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand\:\:complete\(\) has invalid type Symfony\\Component\\Console\\Completion\\CompletionSuggestions\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand\:\:__construct\(\) calls parent\:\:__construct\(\) but Symfony\\Component\\VarDumper\\Command\\ServerDumpCommand does not extend any class\.$#'
+			identifier: class.noParent
+			count: 1
+			path: vendor/symfony/var-dumper/Command/ServerDumpCommand.php
+
+		-
+			message: '#^Parameter \$requestStack of method Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\RequestContextProvider\:\:__construct\(\) has invalid type Symfony\\Component\\HttpFoundation\\RequestStack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php
+
+		-
+			message: '#^Property Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\RequestContextProvider\:\:\$requestStack has unknown class Symfony\\Component\\HttpFoundation\\RequestStack as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php
+
+		-
+			message: '#^Class Twig\\Template not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php
+
+		-
+			message: '#^Parameter \$fileLinkFormatter of method Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\SourceContextProvider\:\:__construct\(\) has invalid type Symfony\\Component\\ErrorHandler\\ErrorRenderer\\FileLinkFormatter\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php
+
+		-
+			message: '#^Parameter \$fileLinkFormatter of method Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\SourceContextProvider\:\:__construct\(\) has invalid type Symfony\\Component\\HttpKernel\\Debug\\FileLinkFormatter\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php
+
+		-
+			message: '#^Property Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\SourceContextProvider\:\:\$fileLinkFormatter has unknown class Symfony\\Component\\ErrorHandler\\ErrorRenderer\\FileLinkFormatter as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php
+
+		-
+			message: '#^Property Symfony\\Component\\VarDumper\\Dumper\\ContextProvider\\SourceContextProvider\:\:\$fileLinkFormatter has unknown class Symfony\\Component\\HttpKernel\\Debug\\FileLinkFormatter as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php
+
+		-
+			message: '#^Instantiated class Symfony\\Component\\HttpFoundation\\RequestStack not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/symfony/var-dumper/VarDumper.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$callback \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/Arr.php
+
+		-
+			message: '#^Class Illuminate\\Support\\Stringable not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$callback \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 3
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$callback \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 3
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$default \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 4
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#3 \$default \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Function e not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Instantiated class Tightenco\\Collect\\Support\\ItemNotFoundException not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Instantiated class Tightenco\\Collect\\Support\\MultipleItemsFoundException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 84
+			path: vendor/tightenco/collect/src/Collect/Support/Collection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$callback \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 3
+			path: vendor/tightenco/collect/src/Collect/Support/Enumerable.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$callback \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/Enumerable.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$default \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 4
+			path: vendor/tightenco/collect/src/Collect/Support/Enumerable.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#3 \$default \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/Enumerable.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$callback \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 3
+			path: vendor/tightenco/collect/src/Collect/Support/LazyCollection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$callback \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 3
+			path: vendor/tightenco/collect/src/Collect/Support/LazyCollection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#2 \$default \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 4
+			path: vendor/tightenco/collect/src/Collect/Support/LazyCollection.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#3 \$default \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/LazyCollection.php
+
+		-
+			message: '#^Function e not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/LazyCollection.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 47
+			path: vendor/tightenco/collect/src/Collect/Support/LazyCollection.php
+
+		-
+			message: '#^Call to static method isValid\(\) on an unknown class Symfony\\Component\\Uid\\Ulid\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Call to static method is_ascii\(\) on an unknown class voku\\helper\\ASCII\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Call to static method plural\(\) on an unknown class Tightenco\\Collect\\Support\\Pluralizer\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Call to static method singular\(\) on an unknown class Tightenco\\Collect\\Support\\Pluralizer\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Call to static method to_ascii\(\) on an unknown class voku\\helper\\ASCII\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Call to static method to_transliterate\(\) on an unknown class voku\\helper\\ASCII\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Call to static method uuid4\(\) on an unknown class Ramsey\\Uuid\\Uuid\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$callback \(Closure\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Deprecated in PHP 8\.4\: Parameter \#1 \$factory \(callable\) is implicitly nullable via default value null\.$#'
+			identifier: parameter.implicitlyNullable
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Function str not found\.$#'
+			identifier: function.notFound
+			count: 2
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class League\\CommonMark\\Environment\\Environment not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class League\\CommonMark\\Extension\\GithubFlavoredMarkdownExtension not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class League\\CommonMark\\Extension\\InlinesOnly\\InlinesOnlyExtension not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class League\\CommonMark\\GithubFlavoredMarkdownConverter not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class League\\CommonMark\\MarkdownConverter not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class Ramsey\\Uuid\\Codec\\TimestampFirstCombCodec not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class Ramsey\\Uuid\\Generator\\CombGenerator not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class Ramsey\\Uuid\\UuidFactory not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class Symfony\\Component\\Uid\\Ulid not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Instantiated class Tightenco\\Collect\\Support\\Stringable not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/Str.php
+
+		-
+			message: '#^Class Illuminate\\Support\\Arr not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/alias.php
+
+		-
+			message: '#^Class Illuminate\\Support\\Collection not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/alias.php
+
+		-
+			message: '#^Class Illuminate\\Support\\Enumerable not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/alias.php
+
+		-
+			message: '#^Class Illuminate\\Support\\HigherOrderCollectionProxy not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/alias.php
+
+		-
+			message: '#^Class Illuminate\\Support\\LazyCollection not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/alias.php
+
+		-
+			message: '#^Class Illuminate\\Support\\Traits\\EnumeratesValues not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/alias.php
+
+		-
+			message: '#^Instantiated class Tightenco\\Collect\\Support\\HigherOrderTapProxy not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: vendor/tightenco/collect/src/Collect/Support/helpers.php

@@ -49,6 +49,14 @@ class ResourceResting extends CommonDBTM
 
     static $rightname = 'plugin_resources_resting';
     public $dohistory = true;
+    /**
+     * @var array
+     */
+    public $updates = [];
+    /**
+     * @var array
+     */
+    public $oldvalues = [];
 
     /**
      * Return the localized name of the current Type

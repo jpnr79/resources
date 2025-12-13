@@ -47,6 +47,14 @@ class ResourceHoliday extends CommonDBTM
     static $rightname = 'plugin_resources_holiday';
 
     public $dohistory = true;
+    /**
+     * @var array
+     */
+    public $updates = [];
+    /**
+     * @var array
+     */
+    public $oldvalues = [];
 
     /**
      * Return the localized name of the current Type
@@ -55,7 +63,7 @@ class ResourceHoliday extends CommonDBTM
      * @param integer $nb Number of items
      *
      * @return string
-     **/
+     */
     static function getTypeName($nb = 0)
     {
         return _n('Holiday', 'Holidays', $nb, 'resources');

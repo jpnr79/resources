@@ -65,6 +65,30 @@ class NotificationTargetResource extends NotificationTarget
     public const RESOURCE_TARGET_ENTITY_GROUP_MANAGER = 4309;
     public const RESOURCE_SALES_MANAGER = 4310;
 
+    /** @var mixed|null */
+    public $obj;
+
+    /** @var mixed|null */
+    public $target_object;
+
+    /** @var array */
+    public $notification_targets = [];
+
+    /** @var array */
+    public $notification_targets_labels = [];
+
+    /** @var array */
+    public $tag_descriptions = [];
+
+    /** @var array */
+    public $updates = [];
+
+    /** @var array */
+    public $oldvalues = [];
+
+    /** @var array */
+    public $data = [];
+
     /**
      * Return main notification events for the object type
      * Internal use only => should use getAllEvents
