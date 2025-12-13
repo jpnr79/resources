@@ -99,6 +99,12 @@ class Resource extends CommonDBTM
 
     public $dohistory = true;
 
+    /** @var array */
+    public $updates = [];
+
+    /** @var array */
+    public $oldvalues = [];
+
     /**
      * Return the localized name of the current Type
      * Should be overloaded in each new class

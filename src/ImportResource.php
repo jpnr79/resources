@@ -6,7 +6,7 @@
  Copyright (C) 2009-2022 by the resources Development Team.
 
  https://github.com/InfotelGLPI/resources
- -------------------------------------------------------------------------
+
 
  LICENSE
 
@@ -52,12 +52,13 @@ if (!defined('GLPI_ROOT')) {
  */
 class ImportResource extends CommonDBTM
 {
-
-    const UPDATE_RESOURCES = 0;
-
-    // Pages
+    /**
+     * @var array
+     */
+    public $existingImports = [];
     const VERIFY_FILE = 1;
     const VERIFY_GLPI = 2;
+    const UPDATE_RESOURCES = 3;
     const IDENTICAL = 0;
     const DIFFERENT = 1;
 
@@ -100,7 +101,6 @@ class ImportResource extends CommonDBTM
         switch ($name) {
             case 'ResourceImport':
                 return ['description' => __('Resource files imports', 'resources')];   // Optional
-                break;
         }
         return [];
     }
@@ -603,7 +603,7 @@ class ImportResource extends CommonDBTM
         if (file_exists($filePath)) {
             return count(file($filePath));
         }
-        return null;
+        return 0;
     }
 
     /**
@@ -853,8 +853,8 @@ class ImportResource extends CommonDBTM
      * Display the error header
      *
      * @param $title
-     * @param null $linkText
-     * @param null $url
+     * @param $linkText
+     * @param $url
      */
     function showErrorHeader($title, $linkText = null, $url = null)
     {
@@ -1553,7 +1553,7 @@ class ImportResource extends CommonDBTM
      *
      * @param $name
      * @param $absoluteFolderPath
-     * @param null $defaultValue
+     * @param $defaultValue
      * @param bool $recursive
      */
     private function dropdownFileInFolder($params)
@@ -2293,6 +2293,8 @@ class ImportResource extends CommonDBTM
                 return __('Different to GLPI', 'resources');
             case self::NOT_IN_GLPI:
                 return __('Not in GLPI', 'resources');
+            default:
+                return '';
         }
     }
 
@@ -2612,7 +2614,7 @@ class ImportResource extends CommonDBTM
      * @param $limit
      *
      * @return array
-     * @throws \GlpitestSQLError
+     * @throws \Exception
      */
     public function getResources($start, $limit)
     {
@@ -2636,7 +2638,7 @@ class ImportResource extends CommonDBTM
     /**
      * @param      $titles
      * @param      $values
-     * @param null $title
+     * @param $title
      */
     private function showToolTipWithArray($titles, $values, $title = null)
     {
@@ -2704,7 +2706,7 @@ class ImportResource extends CommonDBTM
      * @param $limit
      *
      * @return array
-     * @throws \GlpitestSQLError
+     * @throws \Exception
      */
     public function getResourcesImports($imports_id, $start, $limit)
     {
@@ -2803,6 +2805,7 @@ class ImportResource extends CommonDBTM
                     }
                 }
 
+                $resourceID = null;
                 if (count($firstLevelIdentifiers) > 0) {
                     $resourceID = $this->findResource($firstLevelIdentifiers);
                 }
