@@ -41,7 +41,7 @@ function plugin_init_resources() {
    global $PLUGIN_HOOKS;
 
    // add autoload for vendor
-   #include_once(PLUGIN_RESOURCES_DIR . "/vendor/autoload.php");
+   include_once(PLUGIN_RESOURCES_DIR . "/vendor/autoload.php");
 
    $PLUGIN_HOOKS['csrf_compliant']['resources']   = true;
    $PLUGIN_HOOKS['change_profile']['resources']   = [PluginResourcesProfile::class, 'initProfile'];
