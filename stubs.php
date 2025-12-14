@@ -2,7 +2,7 @@
 // Load global permissive stubs then plugin namespaced stubs for PHPStan runs.
 $global = __DIR__ . '/../dev_global_stubs.php';
 if (file_exists($global)) {
-    require_once $global;
+    // require_once $global;
 }
 $namespaced = __DIR__ . '/stubs_namespaced.php';
 if (file_exists($namespaced)) {

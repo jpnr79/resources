@@ -248,7 +248,7 @@ class ImportResource extends CommonDBTM
         global $DB;
 
         $query = "DELETE FROM `" . self::getTable() . "`";
-        return $DB->doQuery($query);
+        return $DB->query($query);
     }
 
     /**
@@ -1174,6 +1174,7 @@ class ImportResource extends CommonDBTM
                             $_SESSION['glpiactive_entity'],
                             true
                         );
+                        $restrict = $restrict ?? [];
                         $restrict = array_merge([$tableProfileUser . ".profiles_id" => [$ids]], $restrict);
                         $profiles_User = $profile_User->find($restrict);
                         $used = [];
@@ -1275,6 +1276,7 @@ class ImportResource extends CommonDBTM
                             $_SESSION['glpiactive_entity'],
                             true
                         );
+                        $restrict = $restrict ?? [];
                         $restrict = array_merge([$tableProfileUser . ".profiles_id" => [$ids]], $restrict);
                         $profiles_User = $profile_User->find($restrict);
                         $used = [];
@@ -1373,7 +1375,7 @@ class ImportResource extends CommonDBTM
     private function initExistingImportsArray()
     {
         if (is_null($this->existingImports)) {
-            $this->existingImports = $this->find();
+            $this->existingImports = $this->find([]);
         }
     }
 
@@ -2196,10 +2198,10 @@ class ImportResource extends CommonDBTM
             ) . ' WHERE CONCAT(firstname," ",realname) LIKE "' . $fullname . '"';
 
 
-        $results = $DB->doQuery($query);
+        $results = $DB->query($query);
         $result = [];
 
-        while ($data = $DB->fetchAssoc($results)) {
+        while ($data = $results->fetch_assoc()) {
             $result[] = $data;
         }
         return $result;
@@ -2270,9 +2272,9 @@ class ImportResource extends CommonDBTM
             $query .= $crit[$i];
         }
 
-        $result = $DB->doQuery($query);
+        $result = $DB->query($query);
 
-        while ($data = $DB->fetchArray($result)) {
+        while ($data = $result->fetch_array()) {
             return $data['id'];
         }
 
@@ -2320,7 +2322,7 @@ class ImportResource extends CommonDBTM
         switch ($display) {
             case self::DISPLAY_STATISTICS:
                 $Resource = new Resource();
-                $resources = $Resource->find();
+                $resources = $Resource->find([]);
                 $result = [
                     'found_first_identifier' => 0,
                     'found_second_identifier' => 0,
@@ -2383,8 +2385,7 @@ class ImportResource extends CommonDBTM
                     break;
                 default:
                     $identifier['target'] = Resource::class;
-                    $identifier['name'] = Resource::getColumnName($column['resource_column'], ['date_declaration DESC']
-                    );
+                    $identifier['name'] = Resource::getColumnName($column['resource_column']);
                     break;
             }
 
@@ -2626,8 +2627,8 @@ class ImportResource extends CommonDBTM
         $query .= ", " . intval($limit);
 
         $resources = [];
-        if ($result = $DB->doQuery($query)) {
-            while ($data = $DB->fetchAssoc($result)) {
+        if ($result = $DB->query($query)) {
+            while ($data = $result->fetch_assoc()) {
                 $resources[] = $data;
             }
         }
@@ -2716,8 +2717,8 @@ class ImportResource extends CommonDBTM
         $query .= " LIMIT " . $start . ", " . $limit;
 
         $resourcesImports = [];
-        if ($result = $DB->doQuery($query)) {
-            while ($data = $DB->fetchAssoc($result)) {
+        if ($result = $DB->query($query)) {
+            while ($data = $result->fetch_assoc()) {
                 $resourcesImports[] = $data;
             }
         }
@@ -3036,8 +3037,8 @@ class ImportResource extends CommonDBTM
         }
 
         $imports = [];
-        if ($result = $DB->doQuery($query)) {
-            while ($data = $DB->fetchAssoc($result)) {
+        if ($result = $DB->query($query)) {
+            while ($data = $result->fetch_assoc()) {
                 $imports[] = $data;
             }
         }
