@@ -32,8 +32,8 @@ define('PLUGIN_RESOURCES_VERSION', '3.0.6');
 if (!defined("PLUGIN_RESOURCES_DIR")) {
    define("PLUGIN_RESOURCES_DIR", Plugin::getPhpDir("resources"));
    define("PLUGIN_RESOURCES_NOTFULL_DIR", Plugin::getPhpDir("resources",false));
-   define("PLUGIN_RESOURCES_WEBDIR", Plugin::getWebDir("resources"));
-   define("PLUGIN_RESOURCES_NOTFULL_WEBDIR", Plugin::getWebDir("resources",false));
+   define("PLUGIN_RESOURCES_WEBDIR", "/plugins/resources/");
+   define("PLUGIN_RESOURCES_NOTFULL_WEBDIR", "/plugins/resources/");
 }
 
 // Init the hooks of the plugins -Needed
