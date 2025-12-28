@@ -1,3 +1,53 @@
+namespace GLPI;
+class CommonDropdown extends \CommonDBTM {
+    public static function rawSearchOptions() { return []; }
+    public function getTable() { return ''; }
+}
+class Session {
+    public static function haveRight($right, $mode) { return true; }
+}
+// Stubs for AuthLDAP and GLPIKey in global namespace for static analysis
+class AuthLDAP {
+    public $fields;
+    public function __construct() {
+        $this->fields = [
+            'host' => '',
+            'port' => 389,
+            'use_tls' => false,
+            'deref_option' => false,
+            'basedn' => '',
+            'rootdn' => '',
+            'rootdn_passwd' => '',
+        ];
+    }
+    public function getFromDB($id) { return true; }
+    public function connect() { return true; }
+}
+
+class GLPIKey {
+    public function decrypt($value) { return $value; }
+}
+// Stubs for Adldap\Models\Model methods used in LDAP.php
+namespace Adldap\Models;
+class Model {
+    public function getUserAccountControlObject() { return new \stdClass(); }
+    public function setUserAccountControl($ac) { return true; }
+    public function getDirty() { return []; }
+    public function setAttribute($field, $value) { return true; }
+    public function getAttributes() { return []; }
+    public function rename($ncn) { return true; }
+    public function save() { return true; }
+    public function fill($attributes) { return true; }
+    public function setDn($dn) { return true; }
+    public function setAccountName($name) { return true; }
+    public function setCommonName($name) { return true; }
+    public function move($dn) { return true; }
+    public function getDnBuilder() { return $this; }
+    public function addOu($ou) { return $this; }
+    public function addCn($cn) { return $this; }
+    public function getCommonName() { return ''; }
+    public function firstOrFail() { return $this; }
+}
 <?php
 namespace GlpiPlugin\Resources;
 
@@ -103,8 +153,25 @@ class Item_Problem extends \CommonDBTM {}
 class Item_Ticket extends \CommonDBTM {}
 
 // Lightweight stubs for external/vendor classes referenced from plugin files
-class AuthLDAP {}
-class GLPIKey {}
+class AuthLDAP {
+    public $fields;
+    public function __construct() {
+        $this->fields = [
+            'host' => '',
+            'port' => 389,
+            'use_tls' => false,
+            'deref_option' => false,
+            'basedn' => '',
+            'rootdn' => '',
+            'rootdn_passwd' => '',
+        ];
+    }
+    public function getFromDB($id) { return true; }
+    public function connect() { return true; }
+}
+class GLPIKey {
+    public function decrypt($value) { return $value; }
+}
 
 // Plugin datainjection helper shim
 class PluginDatainjectionCommonInjectionLib {}

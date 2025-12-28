@@ -6,6 +6,6 @@
     },
     "require": {
     "php": "^8.3",
-    "adldap2/adldap2": "^10.3"
+    "ldaptools/ldaptools": "^0.25.2"
     }
 }

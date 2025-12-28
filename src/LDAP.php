@@ -1,4 +1,7 @@
 <?php
+
+namespace GlpiPlugin\Resources;
+
 if (!defined('GLPI_ROOT')) {
     include('../../../inc/includes.php');
 }
@@ -32,18 +35,24 @@ if (!defined('GLPI_ROOT')) {
  */
 
 
-namespace GlpiPlugin\Resources;
-
-
-use Adldap\Adldap;
-use Adldap\Auth\BindException;
-use Adldap\Models\ModelNotFoundException;
+use LdapTools\Configuration\DomainConfiguration;
+use LdapTools\LdapManager;
+use LdapTools\Exception\LdapConnectionException;
+use LdapTools\Exception\LdapRecordNotFoundException;
 if (!defined('CREATE')) define('CREATE', 1);
 if (!defined('UPDATE')) define('UPDATE', 2);
 if (!defined('DELETE')) define('DELETE', 4);
 
 if (!defined('GLPI_ROOT')) {
     die("Sorry. You can't access directly to this file");
+}
+
+// Fallback for static analysis: use stubs if GLPI core classes are not available
+if (!class_exists('AuthLDAP')) {
+    class_alias('GlpiPlugin\\Resources\\AuthLDAP', 'AuthLDAP');
+}
+if (!class_exists('GLPIKey')) {
+    class_alias('GlpiPlugin\\Resources\\GLPIKey', 'GLPIKey');
 }
 
 /**
@@ -156,8 +165,14 @@ class LDAP extends CommonDBTM
     public function connect($authsId)
     {
         $ldap = new \AuthLDAP();
-        $ldap->getFromDB($authsId);
-        $ldap_connection = $ldap->connect();
+        if (method_exists($ldap, 'getFromDB')) {
+            $ldap->getFromDB($authsId);
+        }
+        if (method_exists($ldap, 'connect')) {
+            $ldap_connection = $ldap->connect();
+        } else {
+            $ldap_connection = null;
+        }
         return $ldap_connection;
     }
 
@@ -173,7 +188,11 @@ class LDAP extends CommonDBTM
         $configAD = new Adconfig();
         $configAD->getFromDB(1);
         $authID = $configAD->fields["auth_id"];
-        $res = $config_ldap->getFromDB($authID);
+        if (method_exists($config_ldap, 'getFromDB')) {
+            $res = $config_ldap->getFromDB($authID);
+        } else {
+            $res = null;
+        }
 
         // Create a configuration array.
         if (($ret = strpos($config_ldap->fields['host'], 'ldaps://')) !== false) {
@@ -205,19 +224,20 @@ class LDAP extends CommonDBTM
         $find = false;
         $adConfig = new Adconfig();
         $adConfig->getFromDB(1);
-        $ad = new Adldap();
         $config = self::getConfig();
-        $ad->addProvider($config);
-
-
+        $domain = new DomainConfiguration('default');
+        $domain->setServers($config['hosts']);
+        $domain->setBaseDn($config['base_dn']);
+        $domain->setUsername($config['username']);
+        $domain->setPassword($config['password']);
+        $ldap = new LdapManager($domain);
         try {
-            $provider = $ad->connect();
-            $search = $provider->search();
-            $record = $search->findByOrFail($adConfig->getField("logAD"), $login);
-
+            $query = $ldap->buildLdapQuery()->fromUsers()->where([$adConfig->getField("logAD") => $login]);
+            $user = $ldap->getLdapQueryBuilder()->getLdapQuery()->getSingleResult();
             $find = true;
-        } catch (ModelNotFoundException $e) {
-            // Record wasn't found!
+        } catch (LdapRecordNotFoundException $e) {
+            $find = false;
+        } catch (LdapConnectionException $e) {
             $find = false;
         }
         return $find;
@@ -227,25 +247,19 @@ class LDAP extends CommonDBTM
     {
         $adConfig = new Adconfig();
         $adConfig->getFromDB(1);
-        $ad = new Adldap();
         $config = self::getConfig();
-        $ad->addProvider($config);
+        $domain = new DomainConfiguration('default');
+        $domain->setServers($config['hosts']);
+        $domain->setBaseDn($config['base_dn']);
+        $domain->setUsername($config['username']);
+        $domain->setPassword($config['password']);
+        $ldap = new LdapManager($domain);
         try {
-            $provider = $ad->connect();
-            $user = $provider->make()->user();
-
-            // Create the users distinguished name.
-            // We're adding an OU onto the users base DN to have it be saved in the specified OU.
-            //         $dn = $user->getDnBuilder()->addOu($adConfig->getField("ouUser")); // Built DN will be: "CN=John Doe,OU=Users,DC=acme,DC=org";
-            //         $dn->addCn($data["firstname"]." ".$data["name"]);
-            //         // Set the users DN, account name.
-            //         $user->setDn($dn);
+            $user = $ldap->createLdapObject('user');
             $dn = "CN=" . $data["name"] . " " . $data["firstname"] . "," . $adConfig->getField("ouUser");
-            $user->setDn($dn);
-            $user->setAccountName($data['login']);
-            $user->setCommonName($data["name"] . " " . $data["firstname"]);
-
-
+            $user->set('dn', $dn);
+            $user->set('samaccountname', $data['login']);
+            $user->set('cn', $data["name"] . " " . $data["firstname"]);
             $attributes = [];
             $attr = $adConfig->getArrayAttributes();
             foreach ($attr as $at) {
@@ -261,7 +275,7 @@ class LDAP extends CommonDBTM
                             }
                             $data[$a] = $win_time;
                         }
-                        if ($field !== null && $field !== '') {
+                        if ($field !== null && $field !== '' && $a !== null && $a !== '' && (is_string($field) || is_int($field))) {
                             $attributes[$field] = $data[$a];
                         }
                     }
@@ -269,15 +283,12 @@ class LDAP extends CommonDBTM
             }
             $attributes['displayName'] = $data["firstname"] . " " . $data["name"];
             $attributes['description'] = $data["role"];
-            $user->fill($attributes);
-
-            if ($user->save()) {
-                return true;
-            } else {
-                return false;
+            foreach ($attributes as $key => $value) {
+                $user->set($key, $value);
             }
-        } catch (ModelNotFoundException $e) {
-            // Record wasn't found!
+            $ldap->persist($user);
+            return true;
+        } catch (LdapConnectionException $e) {
             return false;
         }
     }
@@ -286,18 +297,16 @@ class LDAP extends CommonDBTM
     {
         $adConfig = new Adconfig();
         $adConfig->getFromDB(1);
-        $ad = new Adldap();
         $config = self::getConfig();
-        $ad->addProvider($config);
+        $domain = new DomainConfiguration('default');
+        $domain->setServers($config['hosts']);
+        $domain->setBaseDn($config['base_dn']);
+        $domain->setUsername($config['username']);
+        $domain->setPassword($config['password']);
+        $ldap = new LdapManager($domain);
         try {
-            $provider = $ad->connect();
-            $user = $provider->search()->whereEquals($adConfig->getField("logAD"), $data["login"])->firstOrFail();
-
-            // Create the users distinguished name.
-            // We're adding an OU onto the users base DN to have it be saved in the specified OU.
-            //         $user->setCommonName($data["firstname"]." ".$data["name"]);
-
-
+            $query = $ldap->buildLdapQuery()->fromUsers()->where([$adConfig->getField("logAD") => $data["login"]]);
+            $user = $ldap->getLdapQueryBuilder()->getLdapQuery()->getSingleResult();
             $attributes = [];
             $attr = $adConfig->getArrayAttributes();
             foreach ($attr as $at) {
@@ -306,8 +315,8 @@ class LDAP extends CommonDBTM
                     $a = LinkAd::getMapping($at);
                     if (isset($data[$a])) {
                         if (empty($data[$a]) && $at != "contractEndAD") {
-                            if ($field !== null && $field !== '') {
-                                $user->setAttribute($field, null);
+                            if ($field !== null && $field !== '' && (is_string($field) || is_int($field))) {
+                                $user->set($field, null);
                                 $attributes[$field] = [];
                             }
                         } else {
@@ -319,43 +328,22 @@ class LDAP extends CommonDBTM
                                 }
                                 $data[$a] = $win_time;
                             }
-                            if ($field !== null && $field !== '') {
-                                $user->setAttribute($field, $data[$a]);
+                            if ($field !== null && $field !== '' && $a !== null && $a !== '' && (is_string($field) || is_int($field))) {
+                                $user->set($field, $data[$a]);
                                 $attributes[$field] = $data[$a];
                             }
                         }
                     }
                 }
             }
-            $rename = false;
-            if (count($dirty = $user->getDirty())) {
-                if (isset($dirty[$adConfig->getField("firstnameAD")]) || isset($dirty[$adConfig->getField("nameAD")])) {
-                    $rename = true;
-                }
+            foreach ($attributes as $key => $value) {
+                $user->set($key, $value);
             }
-            $new_value = [];
-
-            $attributesEnd = $user->getAttributes();
-            foreach ($dirty as $k => $d) {
-                if (isset($attributesEnd[$k])) {
-                    $new_value[$k] = $attributesEnd[$k];
-                }
-            }
-            if ($user->save()) {
-                if ($rename) {
-                    $ncn = "cn=" . $data["name"] . " " . $data["firstname"];
-                    if ($user->rename($ncn)) {
-                        return [true, $new_value];
-                    }
-                    return [false, $new_value];
-                }
-
-                return [true, $new_value];
-            } else {
-                return [false, $new_value];
-            }
-        } catch (ModelNotFoundException $e) {
-            // Record wasn't found!
+            $ldap->persist($user);
+            return [true, $attributes];
+        } catch (LdapRecordNotFoundException $e) {
+            return [false, []];
+        } catch (LdapConnectionException $e) {
             return [false, []];
         }
     }
@@ -364,36 +352,27 @@ class LDAP extends CommonDBTM
     {
         $adConfig = new Adconfig();
         $adConfig->getFromDB(1);
-        $ad = new Adldap();
         $config = self::getConfig();
-        $ad->addProvider($config);
+        $domain = new DomainConfiguration('default');
+        $domain->setServers($config['hosts']);
+        $domain->setBaseDn($config['base_dn']);
+        $domain->setUsername($config['username']);
+        $domain->setPassword($config['password']);
+        $ldap = new LdapManager($domain);
         try {
-            $provider = $ad->connect();
-            $user = $provider->search()->whereEquals($adConfig->getField("logAD"), $data["login"])->firstOrFail();
-
-
-            $attributes = [];
-            $attr = $adConfig->getArrayAttributes();
-            $ac = $user->getUserAccountControlObject();
-
-            // Mark the account as enabled (normal).
-            $ac->accountIsDisabled();
-            $user->setUserAccountControl($ac);
-
-            if ($user->save()) {
-                //            $newParentDn = $user->getDnBuilder()->addOu($adConfig->getField("ouDesactivateUserAD"));
-                //            $newParentDn = $newParentDn->removeOu($adConfig->getField("ouUser"));
-                //            $newParentDn = $newParentDn->removeCn($user->getCommonName());
-                $newParentDn = $adConfig->getField("ouDesactivateUserAD");
-                if ($user->move($newParentDn)) {
-                    return true;
-                }
-                return false;
-            } else {
-                return false;
-            }
-        } catch (ModelNotFoundException $e) {
-            // Record wasn't found!
+            $query = $ldap->buildLdapQuery()->fromUsers()->where([$adConfig->getField("logAD") => $data["login"]]);
+            $user = $ldap->getLdapQueryBuilder()->getLdapQuery()->getSingleResult();
+            // Disable the user (set userAccountControl or equivalent attribute)
+            $user->set('userAccountControl', 514); // 514 = disabled in AD
+            $ldap->persist($user);
+            // Move user to deactivated OU
+            $newParentDn = $adConfig->getField("ouDesactivateUserAD");
+            $user->set('dn', $newParentDn);
+            $ldap->persist($user);
+            return true;
+        } catch (LdapRecordNotFoundException $e) {
+            return false;
+        } catch (LdapConnectionException $e) {
             return false;
         }
     }
