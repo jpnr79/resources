@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-27 13:50+0000\n"
+"POT-Creation-Date: 2025-12-28 18:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1517,7 +1517,7 @@ msgstr ""
 msgid "Is linked to a contract"
 msgstr ""
 
-#: src/LDAP.php:64
+#: src/LDAP.php:68
 msgid "LDAP"
 msgstr ""
 
@@ -2157,7 +2157,7 @@ msgstr ""
 msgid "Reconversion"
 msgstr ""
 
-#: inc/recruitingsource.class.php:48 src/RecruitingSource.php:54
+#: inc/recruitingsource.class.php:48 src/RecruitingSource.php:55
 msgid "Recruiting Source"
 msgid_plural "Recruiting Sources"
 msgstr[0] ""
@@ -2956,7 +2956,7 @@ msgid "Wizard resource creation"
 msgstr ""
 
 #: inc/workprofile.class.php:48 inc/candidateorigin.class.php:48
-#: src/WorkProfile.php:54 src/Candidateorigin.php:54
+#: src/WorkProfile.php:55 src/Candidateorigin.php:54
 msgid "Work Profile"
 msgid_plural "Work Profiles"
 msgstr[0] ""
