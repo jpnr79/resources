@@ -27,10 +27,11 @@
  --------------------------------------------------------------------------
  */
 
+
 namespace GlpiPlugin\Resources;
 
-use CommonDropdown;
-use Session;
+use GLPI\CommonDropdown;
+use GLPI\Session;
 
 if (!defined('GLPI_ROOT')) {
     die("Sorry. You can't access directly to this file");
@@ -65,7 +66,6 @@ class RecruitingSource extends CommonDropdown
            return Session::haveRight('dropdown', UPDATE);
     }
 
-<<<<<<< HEAD:src/RecruitingSource.php
     /**
      * Have I the global right to "view" the Object
      *
@@ -75,9 +75,9 @@ class RecruitingSource extends CommonDropdown
      *
      * @return
      **/
-    static function canView(): bool
+    public static function canView(): bool
     {
-           return Session::haveRight('plugin_resources_budget', READ);
+        return Session::haveRight('plugin_resources_budget', READ);
     }
 
     /**
@@ -88,43 +88,10 @@ class RecruitingSource extends CommonDropdown
     function getAdditionalFields()
     {
         return [
-=======
-   /**
-    * Have I the global right to "create" the Object
-    * May be overloaded if needed (ex KnowbaseItem)
-    *
-    * @return booleen
-                [
-   static function canCreate():bool {
-      return Session::haveRight('dropdown', UPDATE);
-   }
-
-   /**
-    * Have I the global right to "view" the Object
-    *
-    * Default is true and check entity if the objet is entity assign
-    *
-    * May be overloaded if needed
-    *
-    * @return booleen
-    **/
-   static function canView():bool {
-      return Session::haveRight('plugin_resources_budget', READ);
-   }
-
-   /**
-    * Return Additional Fields for this type
-    *
-    * @return array
-    **/
-   function getAdditionalFields() {
-
-      return [
->>>>>>> 3bc15d7 (update to dev11):inc/resignationreason.class.php
-//          ['name'  => 'code',
-//                         'label' => __('Code', 'resources'),
-//                         'type'  => 'text',
-//                         'list'  => true],
+            // ['name'  => 'code',
+            //    'label' => __('Code', 'resources'),
+            //    'type'  => 'text',
+            //    'list'  => true],
         ];
     }
 

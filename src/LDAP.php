@@ -1,4 +1,7 @@
 <?php
+if (!defined('GLPI_ROOT')) {
+    include('../../../inc/includes.php');
+}
 
 /*
  * @version $Id: HEADER 15930 2011-10-30 15:47:55Z tsmr $
@@ -28,15 +31,16 @@
  --------------------------------------------------------------------------
  */
 
+
 namespace GlpiPlugin\Resources;
+
 
 use Adldap\Adldap;
 use Adldap\Auth\BindException;
 use Adldap\Models\ModelNotFoundException;
-use AuthLDAP;
-use CommonDBTM;
-use GLPIKey;
-use Session;
+if (!defined('CREATE')) define('CREATE', 1);
+if (!defined('UPDATE')) define('UPDATE', 2);
+if (!defined('DELETE')) define('DELETE', 4);
 
 if (!defined('GLPI_ROOT')) {
     die("Sorry. You can't access directly to this file");
@@ -73,13 +77,10 @@ class LDAP extends CommonDBTM
      *
      * @return bool
      **/
-<<<<<<< HEAD:src/LDAP.php
+
     public static function canView(): bool
-=======
-    static function canView():bool
->>>>>>> 3bc15d7 (update to dev11):inc/ldap.class.php
     {
-        return Session::haveRight(self::$rightname, READ);
+        return \Session::haveRight(self::$rightname, READ);
     }
 
     /**
@@ -88,13 +89,11 @@ class LDAP extends CommonDBTM
      *
      * @return bool
      **/
-<<<<<<< HEAD:src/LDAP.php
+
+
     public static function canCreate(): bool
-=======
-    static function canCreate():bool
->>>>>>> 3bc15d7 (update to dev11):inc/ldap.class.php
     {
-        return Session::haveRightsOr(self::$rightname, [CREATE, UPDATE, DELETE]);
+        return \Session::haveRightsOr(self::$rightname, [CREATE, UPDATE, DELETE]);
     }
 
     /**
@@ -156,7 +155,7 @@ class LDAP extends CommonDBTM
 
     public function connect($authsId)
     {
-        $ldap = new AuthLDAP();
+        $ldap = new \AuthLDAP();
         $ldap->getFromDB($authsId);
         $ldap_connection = $ldap->connect();
         return $ldap_connection;
@@ -164,13 +163,18 @@ class LDAP extends CommonDBTM
 
     private static function getConfig()
     {
-        $config_ldap = new AuthLDAP();
+        if (!class_exists('AuthLDAP')) {
+            throw new \Exception('AuthLDAP class not found. Make sure GLPI is loaded.');
+        }
+        if (!class_exists('GLPIKey')) {
+            throw new \Exception('GLPIKey class not found. Make sure GLPI is loaded.');
+        }
+        $config_ldap = new \AuthLDAP();
         $configAD = new Adconfig();
         $configAD->getFromDB(1);
         $authID = $configAD->fields["auth_id"];
         $res = $config_ldap->getFromDB($authID);
 
-
         // Create a configuration array.
         if (($ret = strpos($config_ldap->fields['host'], 'ldaps://')) !== false) {
             $host = str_replace('ldaps://', '', $config_ldap->fields['host']);
@@ -182,93 +186,18 @@ class LDAP extends CommonDBTM
             $host = $config_ldap->fields['host'];
             $ssl = false;
         }
-        if ($config_ldap->fields['deref_option']) {
-            $deref = true;
-        } else {
-            $deref = false;
-        }
-        if ($config_ldap->fields['use_tls']) {
-            $tls = true;
-        } else {
-            $tls = false;
-        }
-
         $config = [
-            // An array of your LDAP hosts. You can use either
-            // the host name or the IP address of your host.
             'hosts' => [$host],
             'port' => $config_ldap->fields['port'],
-            'use_tls' => $tls,
+            'use_tls' => !empty($config_ldap->fields['use_tls']),
             'use_ssl' => $ssl,
-            'follow_referrals' => $deref,
-
-            // The base distinguished name of your domain to perform searches upon.
-            'base_dn' => $config_ldap->fields['basedn'],
-
-            // The account to use for querying / modifying LDAP records. This
-            // does not need to be an admin account. This can also
-            // be a full distinguished name of the user account.
-            'username' => $configAD->fields['login'],
-            'password' => (new GLPIKey())->decrypt($configAD->fields['password']),
-        ];
-        //      Toolbox::logWarning($config);
-        return $config;
-    }
-
-    public function getUserInformation($authID)
-    {
-        // Construct new Adldap instance.
-        $ad = new Adldap();
-        $config_ldap = new AuthLDAP();
-        $res = $config_ldap->getFromDB($authID);
-
-
-        // Create a configuration array.
-        if (($ret = strpos($config_ldap->fields['host'], 'ldaps://')) !== false) {
-            $host = str_replace('ldaps://', '', $config_ldap->fields['host']);
-            $ssl = true;
-        } elseif (($ret = strpos($config_ldap->fields['host'], 'ldap://')) !== false) {
-            $host = str_replace('ldap://', '', $config_ldap->fields['host']);
-            $ssl = false;
-        } else {
-            $host = $config_ldap->fields['host'];
-            $ssl = false;
-        }
-
-        $config = [
-            // An array of your LDAP hosts. You can use either
-            // the host name or the IP address of your host.
-            'hosts' => [$host],
-            'port' => $config_ldap->fields['port'],
-            'use_tls' => !!$config_ldap->fields['use_tls'],
-            'use_ssl' => $ssl,
-            'follow_referrals' => !!$config_ldap->fields['deref_option'],
+            'follow_referrals' => !empty($config_ldap->fields['deref_option']),
             'version' => 3,
-
-            // The base distinguished name of your domain to perform searches upon.
             'base_dn' => $config_ldap->fields['basedn'],
-
-            // The account to use for querying / modifying LDAP records. This
-            // does not need to be an admin account. This can also
-            // be a full distinguished name of the user account.
             'username' => $config_ldap->fields['rootdn'],
-            'password' => (new GLPIKey())->decrypt($config_ldap->fields['rootdn_passwd']),
+            'password' => (new \GLPIKey())->decrypt($config_ldap->fields['rootdn_passwd']),
         ];
-
-        // Add a connection provider to Adldap.
-        $ad->addProvider($config);
-
-        try {
-            // If a successful connection is made to your server, the provider will be returned.
-            $provider = $ad->connect();
-
-            // Performing a query.
-            $results = $provider->search()->where('samaccountname', '=', 'ales')->get();
-            //         Toolbox::logWarning($results);
-        } catch (BindException $e) {
-            // There was an issue binding / connecting to the server.
-
-        }
+        return $config;
     }
 
     public function existingUser($login)
@@ -320,7 +249,8 @@ class LDAP extends CommonDBTM
             $attributes = [];
             $attr = $adConfig->getArrayAttributes();
             foreach ($attr as $at) {
-                if (!empty($adConfig->getField($at))) {
+                $field = $adConfig->getField($at);
+                if (!empty($field)) {
                     $a = LinkAd::getMapping($at);
                     if (isset($data[$a]) && !empty($data[$a])) {
                         if ($at == "contractEndAD") {
@@ -331,10 +261,9 @@ class LDAP extends CommonDBTM
                             }
                             $data[$a] = $win_time;
                         }
-                        $attributes[$adConfig->getField($at)] = $data[$a];
-                        //                  if(empty($data[$a])){
-                        //                     $attributes[$adConfig->getField($at)] = array();
-                        //                  }
+                        if ($field !== null && $field !== '') {
+                            $attributes[$field] = $data[$a];
+                        }
                     }
                 }
             }
@@ -372,12 +301,15 @@ class LDAP extends CommonDBTM
             $attributes = [];
             $attr = $adConfig->getArrayAttributes();
             foreach ($attr as $at) {
-                if (!empty($adConfig->getField($at))) {
+                $field = $adConfig->getField($at);
+                if (!empty($field)) {
                     $a = LinkAd::getMapping($at);
                     if (isset($data[$a])) {
                         if (empty($data[$a]) && $at != "contractEndAD") {
-                            $user->setAttribute($adConfig->getField($at), null);
-                            $attributes[$adConfig->getField($at)] = [];
+                            if ($field !== null && $field !== '') {
+                                $user->setAttribute($field, null);
+                                $attributes[$field] = [];
+                            }
                         } else {
                             if ($at == "contractEndAD") {
                                 $win_time = 0;
@@ -387,8 +319,10 @@ class LDAP extends CommonDBTM
                                 }
                                 $data[$a] = $win_time;
                             }
-                            $user->setAttribute($adConfig->getField($at), $data[$a]);
-                            $attributes[$adConfig->getField($at)] = $data[$a];
+                            if ($field !== null && $field !== '') {
+                                $user->setAttribute($field, $data[$a]);
+                                $attributes[$field] = $data[$a];
+                            }
                         }
                     }
                 }
